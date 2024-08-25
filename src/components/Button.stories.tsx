@@ -5,7 +5,10 @@ const meta = {
   title: "Button",
   component: Button,
   argTypes: {
-    label: ["Primaryボタン", "Normalボタン"],
+    label: {
+      options: ["Primaryボタン", "Normalボタン"],
+      control: {type: "select"}
+    }
   }
 } as Meta<typeof Button>;
 
